@@ -1,0 +1,7 @@
+torch
+matplotlib
+numpy
+gymnasium[all]
+imageio
+pandas
+cv2
