@@ -1,14 +1,16 @@
 import gymnasium as gym
 import utils
-from agent import DQNAgent
+from dqn import DQNAgent
 import numpy as np
 import os
 import warnings
 from argparse import ArgumentParser
 import pandas as pd
 from preprocess import AtariEnv
+from ale_py import ALEInterface, LoggerMode
 
 warnings.simplefilter("ignore")
+ALEInterface.setLoggerMode(LoggerMode.Error)
 
 environments = [
     "AsteroidsNoFrameskip-v4",
@@ -29,17 +31,18 @@ environments = [
 ]
 
 
-def make_env(name):
-    return AtariEnv(
-        name,
-        shape=(84, 84),
-        repeat=4,
-        clip_rewards=True,
-    ).make()
-
-
 def run_dqn(args):
-    envs = gym.vector.AsyncVectorEnv([make_env(args.env) for _ in range(args.n_envs)])
+
+    def make_env():
+        # need to pass this func to constructor without calling()
+        return AtariEnv(
+            args.env,
+            shape=(84, 84),
+            repeat=4,
+            clip_rewards=True,
+        ).make()
+
+    envs = gym.vector.AsyncVectorEnv([make_env for _ in range(args.n_envs)])
     save_prefix = args.env.split("/")[-1]
 
     print(f"\nEnvironment: {save_prefix}")
