@@ -8,27 +8,10 @@ from argparse import ArgumentParser
 import pandas as pd
 from preprocess import AtariEnv
 from ale_py import ALEInterface, LoggerMode
+from config import environments
 
 warnings.simplefilter("ignore")
 ALEInterface.setLoggerMode(LoggerMode.Error)
-
-environments = [
-    "AsteroidsNoFrameskip-v4",
-    "BreakoutNoFrameskip-v4",
-    "BeamRiderNoFrameskip-v4",
-    "CentipedeNoFrameskip-v4",
-    "DonkeyKongNoFrameskip-v4",
-    "DoubleDunkNoFrameskip-v4",
-    "FroggerNoFrameskip-v4",
-    "KungFuMasterNoFrameskip-v4",
-    "MarioBrosNoFrameskip-v4",
-    "MsPacmanNoFrameskip-v4",
-    "PongNoFrameskip-v4",
-    "SeaquestNoFrameskip-v4",
-    "SpaceInvadersNoFrameskip-v4",
-    "TetrisNoFrameskip-v4",
-    "VideoChessNoFrameskip-v4",
-]
 
 
 def run_dqn(args):
