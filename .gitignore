@@ -2,8 +2,8 @@
 *.pt
 weights/
 tovi/
-environments/
-metrics/
+# environments/
+# metrics/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
