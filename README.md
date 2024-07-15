@@ -24,34 +24,34 @@ python main.py --env 'LunarLander-v2'
 
 ---
 
-<!-- <table>
+<table>
     <tr>
         <td>
-            <p><b>CartPole-v1</b></p>
-            <img src="environments/CartPole-v1.gif" width="250" height="250"/>
+            <p><b>Adventure</b></p>
+            <img src="environments/AdventureNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
         <td>
-            <p><b>MountainCar-v0</b></p>
-            <img src="environments/MountainCar-v0.gif" width="250" height="250"/>
+            <p><b>AirRaid</b></p>
+            <img src="environments/AirRaidNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
         <td>
-            <p><b>Acrobot-v1</b></p>
-            <img src="environments/Acrobot-v1.gif" width="250" height="250"/>
+            <p><b>Alien</b></p>
+            <img src="environments/AlienNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
     </tr>
     <tr>
         <td>
-            <img src="metrics/CartPole-v1_running_avg.png" width="250" height="250"/>
+            <img src="metrics/AdventureNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
         <td>
-            <img src="metrics/MountainCar-v0_running_avg.png" width="250" height="250"/>
+            <img src="metrics/AirRaidNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
         <td>
-            <img src="metrics/Acrobot-v1_running_avg.png" width="250" height="250"/>
+            <img src="metrics/AlienNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
     </tr>
 </table>
-<table>
+<!-- <table>
     <tr>
         <td>
             <p><b>LunarLander-v2</b></p>
