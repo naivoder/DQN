@@ -51,34 +51,34 @@ python main.py --env 'LunarLander-v2'
         </td>
     </tr>
 </table>
-<!-- <table>
+<table>
     <tr>
         <td>
-            <p><b>LunarLander-v2</b></p>
-            <img src="environments/LunarLander-v2.gif" width="250" height="250"/>
+            <p><b>Amidar</b></p>
+            <img src="environments/AmidarNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <td>
+        <!-- <td>
             <p><b>Asteroids-v5</b></p>
             <img src="environments/Asteroids-v5.gif" width="250" height="250"/>
         </td>
         <td>
             <p><b>Breakout-v5</b></p>
             <img src="environments/Breakout-v5.gif" width="250" height="250"/>
-        </td>
+        </td> -->
     </tr>
     <tr>
         <td>
-            <img src="metrics/LunarLander-v2_running_avg.png" width="250" height="250"/>
+            <img src="metrics/AmidarNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
-        <td>
+        <!-- <td>
             <img src="metrics/Asteroids-v5_running_avg.png" width="250" height="250"/>
         </td>
         <td>
             <img src="metrics/Breakout-v5_running_avg.png" width="250" height="250"/>
-        </td>
+        </td>-->
     </tr>
 </table>
-<table>
+<!--<table>
     <tr>
         <td>
             <p><b>BeamRider-v5</b></p>
@@ -142,7 +142,7 @@ python main.py --env 'LunarLander-v2'
 <table>
     <tr>
         <td>
-            <p><b>MsPacmanNoFrameskip-v4</b></p>
+            <p><b>MsPacman</b></p>
             <img src="environments/MsPacmanNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
         <!--<td>
