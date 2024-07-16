@@ -62,7 +62,7 @@ class DQNAgent:
         n_actions,
         alpha=3e-4,
         gamma=0.99,
-        eps_min=0.01,
+        eps_min=0.1,
         eps_dec=5e-7,
         batch_size=64,
         mem_size=100000,
@@ -126,7 +126,7 @@ class DQNAgent:
         self.q.optimizer.step()
 
         self.counter += 1
-        self.decrement_epsilon()
+        # self.decrement_epsilon()
 
     def decrement_epsilon(self):
         self.epsilon = max(self.eps_min, self.epsilon - self.eps_dec)

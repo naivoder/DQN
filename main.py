@@ -73,6 +73,7 @@ def run_dqn(args):
 
             agent.learn()
         agent.q.scheduler.step()
+        agent.decrement_epsilon()
         states = next_states
 
         if len(history) > 0:
