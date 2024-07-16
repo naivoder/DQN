@@ -36,7 +36,7 @@ def run_dqn(args):
         args.env,
         envs.single_observation_space.shape,
         envs.single_action_space.n,
-        mem_size=100000,
+        mem_size=1000000,
         batch_size=32,
         eps_dec=1e-6,
         replace_target_count=1000,
