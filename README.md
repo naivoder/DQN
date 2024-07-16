@@ -57,55 +57,55 @@ python main.py --env 'LunarLander-v2'
             <p><b>Amidar</b></p>
             <img src="environments/AmidarNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!-- <td>
-            <p><b>Asteroids-v5</b></p>
-            <img src="environments/Asteroids-v5.gif" width="250" height="250"/>
+        <td>
+            <p><b>Asteroids</b></p>
+            <img src="environments/AsteroidsNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
         <td>
-            <p><b>Breakout-v5</b></p>
-            <img src="environments/Breakout-v5.gif" width="250" height="250"/>
-        </td> -->
+            <p><b>Assault</b></p>
+            <img src="environments/AssaultNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
             <img src="metrics/AmidarNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
-        <!-- <td>
-            <img src="metrics/Asteroids-v5_running_avg.png" width="250" height="250"/>
+        <td>
+            <img src="metrics/AsteroidsNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
         <td>
-            <img src="metrics/Breakout-v5_running_avg.png" width="250" height="250"/>
-        </td>-->
+            <img src="metrics/AssaultNoFrameskip-v4_running_avg.png" width="250" height="250"/>
+        </td>
     </tr>
 </table>
-<!--<table>
+<table>
     <tr>
         <td>
-            <p><b>BeamRider-v5</b></p>
-            <img src="environments/BeamRider-v5.gif" width="250" height="250"/>
+            <p><b>Asterix</b></p>
+            <img src="environments/AsterixNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <td>
+        <!--<td>
             <p><b>Centipede-v5</b></p>
             <img src="environments/Centipede-v5.gif" width="250" height="250"/>
         </td>
         <td>
             <p><b>DonkeyKong-v5</b></p>
             <img src="environments/DonkeyKong-v5.gif" width="250" height="250"/>
-        </td>
+        </td>-->
     </tr>
     <tr>
         <td>
-            <img src="metrics/BeamRider-v5_running_avg.png" width="250" height="250"/>
+            <img src="metrics/AsterixNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
-        <td>
+        <!--<td>
             <img src="metrics/Centipede-v5_running_avg.png" width="250" height="250"/>
         </td>
         <td>
             <img src="metrics/DonkeyKong-v5_running_avg.png" width="250" height="250"/>
-        </td>
+        </td>-->
     </tr>
 </table>
-<table>
+<!--<table>
     <tr>
         <td>
             <p><b>DoubleDunk-v5</b></p>
