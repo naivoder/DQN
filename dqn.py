@@ -123,7 +123,7 @@ class DQNAgent:
 
         loss = self.q.loss(q_target, q_pred).to(self.q.device)
         loss.backward()
-        self.q.scheduler.step()
+        self.q.optimizer.step()
 
         self.counter += 1
         self.decrement_epsilon()
