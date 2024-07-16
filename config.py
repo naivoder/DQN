@@ -1,5 +1,4 @@
 environments = [
-    "AdventureNoFrameskip-v4",
     "AirRaidNoFrameskip-v4",
     "AlienNoFrameskip-v4",
     "AmidarNoFrameskip-v4",
@@ -61,4 +60,5 @@ environments = [
     "WizardOfWorNoFrameskip-v4",
     "YarsRevengeNoFrameskip-v4",
     "ZaxxonNoFrameskip-v4",
+    "AdventureNoFrameskip-v4",
 ]

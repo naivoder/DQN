@@ -37,8 +37,8 @@ def run_dqn(args):
         envs.single_observation_space.shape,
         envs.single_action_space.n,
         mem_size=500000,
-        batch_size=32,
-        eps_dec=1e-6,
+        batch_size=64,
+        eps_dec=1e-5,
         replace_target_count=1000,
     )
 
@@ -120,7 +120,7 @@ def save_best_version(env_name, agent, seeds=10):
         repeat=4,
         clip_rewards=True,
         no_ops=0,
-        fire_first=False,
+        fire_first=True,
     ).make()
 
     save_prefix = env_name.split("/")[-1]
