@@ -38,7 +38,7 @@ def run_dqn(args):
         envs.single_action_space.n,
         mem_size=100000,
         batch_size=32,
-        eps_dec=5e-6,
+        eps_dec=1e-6,
         replace_target_count=1000,
     )
 
@@ -154,7 +154,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--n_steps",
-        default=50000,
+        default=100000,
         type=int,
         help="Number of learning steps to run during training",
     )
