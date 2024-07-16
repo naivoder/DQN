@@ -1,6 +1,15 @@
 import torch
+from torch.optim.lr_scheduler import LambdaLR
 import numpy as np
 from memory import ReplayBuffer
+
+def lr_lambda(epoch):
+    if epoch < 20000:
+        return 3e-4
+    elif 20000 <= epoch < 50000:
+        return 1e-4
+    else:
+        return 3e-5
 
 
 class ActionValue(torch.nn.Module):
@@ -16,7 +25,8 @@ class ActionValue(torch.nn.Module):
         self.fc1 = torch.nn.Linear(self.fc1_input_dim, 512)
         self.out = torch.nn.Linear(512, n_actions)
 
-        self.optimizer = torch.optim.RMSprop(self.parameters(), lr=alpha)
+        self.optimizer = torch.optim.AdamW(self.parameters(), lr=alpha)
+        self.scheduler = LambdaLR(self.optimizer, lr_lambda)
         self.loss = torch.nn.MSELoss()  # use squared l1 instead of mse?
 
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -113,7 +123,7 @@ class DQNAgent:
 
         loss = self.q.loss(q_target, q_pred).to(self.q.device)
         loss.backward()
-        self.q.optimizer.step()
+        self.q.scheduler.step()
 
         self.counter += 1
         self.decrement_epsilon()
