@@ -120,7 +120,7 @@ def save_best_version(env_name, agent, seeds=10):
         repeat=4,
         clip_rewards=True,
         no_ops=0,
-        fire_first=True,
+        fire_first=False,
     ).make()
 
     save_prefix = env_name.split("/")[-1]
