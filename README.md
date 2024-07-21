@@ -105,13 +105,13 @@ python main.py --env 'LunarLander-v2'
         </td>
     </tr>
 </table>
-<!--<table>
+<table>
     <tr>
         <td>
-            <p><b>DoubleDunk-v5</b></p>
-            <img src="environments/DoubleDunk-v5.gif" width="250" height="250"/>
+            <p><b>BattleZone</b></p>
+            <img src="environments/BattleZoneNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <td>
+        <!--<td>
             <p><b>Frogger-v5</b></p>
             <img src="environments/Frogger-v5.gif" width="250" height="250"/>
         </td>
@@ -122,13 +122,13 @@ python main.py --env 'LunarLander-v2'
         <td>
             <p><b>MarioBros-v5</b></p>
             <img src="environments/MarioBros-v5.gif" width="250" height="250"/>
-        </td>
+        </td>  -->
     </tr>
     <tr>
-    <td>
-            <img src="metrics/DoubleDunk-v5_running_avg.png" width="250" height="250"/>
-        </td>
         <td>
+            <img src="metrics/BattleZoneNoFrameskip-v4_running_avg.png" width="250" height="250"/>
+        </td>
+        <!--<td>
             <img src="metrics/Frogger-v5_running_avg.png" width="250" height="250"/>
         </td>
         <td>
@@ -136,10 +136,10 @@ python main.py --env 'LunarLander-v2'
         </td>
         <td>
             <img src="metrics/MarioBros-v5_running_avg.png" width="250" height="250"/>
-        </td>
+        </td>  -->
     </tr>
-</table>  -->
-<table>
+</table>
+<!--<table>
     <tr>
         <td>
             <p><b>MsPacman</b></p>
