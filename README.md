@@ -84,25 +84,25 @@ python main.py --env 'LunarLander-v2'
             <p><b>Asterix</b></p>
             <img src="environments/AsterixNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>Centipede-v5</b></p>
-            <img src="environments/Centipede-v5.gif" width="250" height="250"/>
+        <td>
+            <p><b>Atlantis</b></p>
+            <img src="environments/AtlantisNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
         <td>
-            <p><b>DonkeyKong-v5</b></p>
-            <img src="environments/DonkeyKong-v5.gif" width="250" height="250"/>
-        </td>-->
+            <p><b>BankHeist</b></p>
+            <img src="environments/BankHeistNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
             <img src="metrics/AsterixNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/Centipede-v5_running_avg.png" width="250" height="250"/>
+        <td>
+            <img src="metrics/AtlantisNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
         <td>
-            <img src="metrics/DonkeyKong-v5_running_avg.png" width="250" height="250"/>
-        </td>-->
+            <img src="metrics/BankHeistNoFrameskip-v4_running_avg.png" width="250" height="250"/>
+        </td>
     </tr>
 </table>
 <!--<table>
