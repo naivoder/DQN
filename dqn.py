@@ -24,11 +24,13 @@ class ActionValue(torch.nn.Module):
         self.out = torch.nn.Linear(512, n_actions)
 
         self.optimizer = torch.optim.AdamW(self.parameters(), lr=alpha)
-        # self.scheduler = LambdaLR(self.optimizer, lr_lambda)
+        self.scheduler = LambdaLR(self.optimizer, lr_lambda)
         self.loss = torch.nn.MSELoss()  # use squared l1 instead of mse?
 
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.to(self.device)
+
+        self._initialize_weights()
 
     def forward(self, x):
         x = torch.nn.functional.relu(self.conv1(x))
@@ -50,6 +52,15 @@ class ActionValue(torch.nn.Module):
         x = torch.nn.functional.relu(self.conv2(x))
         x = torch.nn.functional.relu(self.conv3(x))
         return x.numel()
+
+    def _initialize_weights(self):
+        for m in self.modules():
+            if isinstance(m, torch.nn.Conv2d) or isinstance(m, torch.nn.Linear):
+                init.orthogonal_(m.weight)
+                if isinstance(m, torch.nn.Linear):
+                    m.weight.data.mul_(1/100)
+                if m.bias is not None:
+                    init.constant_(m.bias, 0)
 
 
 class DQNAgent:
