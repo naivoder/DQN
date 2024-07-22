@@ -6,10 +6,8 @@ from memory import ReplayBuffer
 def lr_lambda(epoch):
     if epoch < 20000:
         return 3e-4
-    elif 20000 <= epoch < 50000:
-        return 1e-4
     else:
-        return 3e-5
+        return 1e-4
 
 
 class ActionValue(torch.nn.Module):
@@ -26,7 +24,7 @@ class ActionValue(torch.nn.Module):
         self.out = torch.nn.Linear(512, n_actions)
 
         self.optimizer = torch.optim.AdamW(self.parameters(), lr=alpha)
-        self.scheduler = LambdaLR(self.optimizer, lr_lambda)
+        # self.scheduler = LambdaLR(self.optimizer, lr_lambda)
         self.loss = torch.nn.MSELoss()  # use squared l1 instead of mse?
 
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

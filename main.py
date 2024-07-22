@@ -72,7 +72,7 @@ def run_dqn(args):
                 score[j] = 0
 
             agent.learn()
-        agent.q.scheduler.step()
+        # agent.q.scheduler.step()
         agent.decrement_epsilon()
         states = next_states
 
