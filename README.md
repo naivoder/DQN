@@ -115,14 +115,10 @@ python main.py --env 'LunarLander-v2'
             <p><b>Berzerk</b></p>
             <img src="environments/BerzerkNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>KungFuMaster-v5</b></p>
-            <img src="environments/KungFuMaster-v5.gif" width="250" height="250"/>
-        </td>
         <td>
-            <p><b>MarioBros-v5</b></p>
-            <img src="environments/MarioBros-v5.gif" width="250" height="250"/>
-        </td>  -->
+            <p><b>Bowling</b></p>
+            <img src="environments/BowlingNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
@@ -131,12 +127,9 @@ python main.py --env 'LunarLander-v2'
         <td>
             <img src="metrics/BerzerkNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/KungFuMaster-v5_running_avg.png" width="250" height="250"/>
-        </td>
         <td>
-            <img src="metrics/MarioBros-v5_running_avg.png" width="250" height="250"/>
-        </td>  -->
+            <img src="metrics/BowlingNoFrameskip-v4_running_avg.png" width="250" height="250"/>
+        </td>
     </tr>
 </table>
 <!--<table>
