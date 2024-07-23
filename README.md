@@ -111,11 +111,11 @@ python main.py --env 'LunarLander-v2'
             <p><b>BattleZone</b></p>
             <img src="environments/BattleZoneNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>Frogger-v5</b></p>
-            <img src="environments/Frogger-v5.gif" width="250" height="250"/>
-        </td>
         <td>
+            <p><b>Berzerk</b></p>
+            <img src="environments/BerzerkNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <!--<td>
             <p><b>KungFuMaster-v5</b></p>
             <img src="environments/KungFuMaster-v5.gif" width="250" height="250"/>
         </td>
@@ -128,10 +128,10 @@ python main.py --env 'LunarLander-v2'
         <td>
             <img src="metrics/BattleZoneNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/Frogger-v5_running_avg.png" width="250" height="250"/>
-        </td>
         <td>
+            <img src="metrics/BerzerkNoFrameskip-v4_running_avg.png" width="250" height="250"/>
+        </td>
+        <!--<td>
             <img src="metrics/KungFuMaster-v5_running_avg.png" width="250" height="250"/>
         </td>
         <td>
@@ -145,27 +145,27 @@ python main.py --env 'LunarLander-v2'
             <p><b>MsPacman</b></p>
             <img src="environments/MsPacmanNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
+        <td>
             <p><b>SpaceInvaders-v5</b></p>
             <img src="environments/SpaceInvaders-v5.gif" width="250" height="250"/>
         </td>
         <td>
             <p><b>Tetris-v5</b></p>
             <img src="environments/Tetris-v5.gif" width="250" height="250"/>
-        </td>-->
+        </td>
     </tr>
     <tr>
         <td>
             <img src="metrics/MsPacmanNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
-        <!--<td>
+        <td>
             <img src="metrics/SpaceInvaders-v5_running_avg.png" width="250" height="250"/>
         </td>
         <td>
             <img src="metrics/Tetris-v5_running_avg.png" width="250" height="250"/>
-        </td> -->
+        </td>
     </tr>
-</table>
+</table> -->
 
 ---
 
