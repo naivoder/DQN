@@ -9,6 +9,7 @@ import pandas as pd
 from preprocess import AtariEnv
 from ale_py import ALEInterface, LoggerMode
 from config import environments
+import torch 
 
 warnings.simplefilter("ignore")
 ALEInterface.setLoggerMode(LoggerMode.Error)
@@ -38,7 +39,7 @@ def run_dqn(args):
         envs.single_action_space.n,
         mem_size=200000,
         batch_size=64,
-        eps_dec=1e-5,
+        eps_dec=1e-6,
         replace_target_count=1000,
     )
 
@@ -97,6 +98,7 @@ def run_dqn(args):
         eps_str = f"  Epsilon = {agent.epsilon:.4f}"
         print(ep_str + g_str + avg_str + eps_str, end="\r")
 
+    torch.save(agent.q.state_dict(), f"weights/{save_prefix}_q_final.pt")
     save_results(args.env, history, metrics, agent)
 
 
