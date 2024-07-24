@@ -56,11 +56,11 @@ class ActionValue(torch.nn.Module):
     def _initialize_weights(self):
         for m in self.modules():
             if isinstance(m, torch.nn.Conv2d) or isinstance(m, torch.nn.Linear):
-                init.orthogonal_(m.weight)
+                torch.nn.init.orthogonal_(m.weight)
                 if isinstance(m, torch.nn.Linear):
                     m.weight.data.mul_(1/100)
                 if m.bias is not None:
-                    init.constant_(m.bias, 0)
+                    torch.nn.init.constant_(m.bias, 0)
 
 
 class DQNAgent:
