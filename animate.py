@@ -23,7 +23,8 @@ def generate_animation(env_name):
         eps_dec=1e-5,
         replace_target_count=1000,)
     
-    agent.load_checkpoint()
+    # agent.load_checkpoint()
+    agent.q.load_state_dict(torch.load(f"weights/{env_name}_q_final.pt"))
     
     best_total_reward = float("-inf")
     best_frames = None
