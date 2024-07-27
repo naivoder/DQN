@@ -142,10 +142,10 @@ python main.py --env 'LunarLander-v2'
             <p><b>Breakout</b></p>
             <img src="environments/BreakoutNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>Tetris-v5</b></p>
-            <img src="environments/Tetris-v5.gif" width="250" height="250"/>
-        </td>-->
+        -<td>
+            <p><b>Carnival</b></p>
+            <img src="environments/CarnivalNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
@@ -154,9 +154,9 @@ python main.py --env 'LunarLander-v2'
         <td>
             <img src="metrics/BreakoutNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/Tetris-v5_running_avg.png" width="250" height="250"/>
-        </td>-->
+        <td>
+            <img src="metrics/CarnivalNoFrameskip-v4_running_avg.png" width="250" height="250"/>
+        </td>
     </tr>
 </table> 
 
