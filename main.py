@@ -111,7 +111,8 @@ def save_results(env_name, history, metrics, agent):
 
 
 def save_best_version(env_name, agent, seeds=10):
-    agent.load_checkpoint()
+    # actually, its almost always better to use the final weights...
+    # agent.load_checkpoint()
 
     best_total_reward = float("-inf")
     best_frames = None
