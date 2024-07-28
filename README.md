@@ -169,10 +169,10 @@ python main.py --env 'LunarLander-v2'
             <p><b>ChopperCommand</b></p>
             <img src="environments/ChopperCommandNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>Carnival</b></p>
-            <img src="environments/CarnivalNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>-->
+        <td>
+            <p><b>CrazyClimber</b></p>
+            <img src="environments/CrazyClimberNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
@@ -181,9 +181,9 @@ python main.py --env 'LunarLander-v2'
         <td>
             <img src="metrics/ChopperCommandNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/CarnivalNoFrameskip-v4_running_avg.png" width="250" height="250"/>
-        </td>-->
+        <td>
+            <img src="metrics/CrazyClimberNoFrameskip-v4_running_avg.png" width="250" height="250"/>
+        </td>
     </tr>
 </table> 
 ---
