@@ -186,6 +186,33 @@ python main.py --env 'LunarLander-v2'
         </td>
     </tr>
 </table> 
+<table>
+    <tr>
+        <td>
+            <p><b>Defender</b></p>
+            <img src="environments/DefenderNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <!--<td>
+            <p><b>ChopperCommand</b></p>
+            <img src="environments/ChopperCommandNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <td>
+            <p><b>CrazyClimber</b></p>
+            <img src="environments/CrazyClimberNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>-->
+    </tr>
+    <tr>
+        <td>
+            <img src="metrics/DefenderNoFrameskip-v4_running_avg.png" width="250" height="250"/>
+        </td>
+        <!--<td>
+            <img src="metrics/ChopperCommandNoFrameskip-v4_running_avg.png" width="250" height="250"/>
+        </td>
+        <td>
+            <img src="metrics/CrazyClimberNoFrameskip-v4_running_avg.png" width="250" height="250"/>
+        </td>-->
+    </tr>
+</table> 
 ---
 
 ## Acknowledgements
