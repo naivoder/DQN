@@ -37,7 +37,7 @@ def run_dqn(args):
         args.env,
         envs.single_observation_space.shape,
         envs.single_action_space.n,
-        mem_size=200000,
+        mem_size=100000,
         batch_size=64,
         eps_dec=1e-6,
         replace_target_count=1000,
@@ -121,7 +121,7 @@ def save_best_version(env_name, agent, seeds=10):
         env_name,
         shape=(84, 84),
         repeat=4,
-        clip_rewards=True,
+        clip_rewards=False,
         no_ops=0,
         fire_first=False,
     ).make()
