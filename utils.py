@@ -49,20 +49,24 @@ def save_animation(frames, filename):
 
 
 def plot_metrics(env, metrics):
-    episodes = [m["episode"] for m in metrics]
-    avg_scores = [m["average_score"] for m in metrics]
-    avg_q_values = [m["average_q_value"] for m in metrics]
+    episodes = metrics["episode"]
+    run_avg_scores = metrics["average_score"]
+    avg_q_values = metrics["average_q_value"]
+
+    run_avg_qvals = np.zeros_like(avg_q_values)
+    for i in range(len(avg_q_values)):
+        run_avg_qvals[i] = np.mean(avg_q_values[max(0, i - 100) : i + 1])
 
     fig, ax1 = plt.subplots(figsize=(10, 5))
 
     ax1.set_xlabel("Episode")
     ax1.set_ylabel("Average Score", color="tab:blue")
-    ax1.plot(episodes, avg_scores, label="Average Score", color="tab:blue")
+    ax1.plot(episodes, run_avg_scores, label="Average Score", color="tab:blue")
     ax1.tick_params(axis="y", labelcolor="tab:blue")
 
     ax2 = ax1.twinx()
     ax2.set_ylabel("Average Q Value", color="tab:red")
-    ax2.plot(episodes, avg_q_values, label="Average Q Value", color="tab:red")
+    ax2.plot(episodes, run_avg_qvals, label="Average Q Value", color="tab:red")
     ax2.tick_params(axis="y", labelcolor="tab:red")
 
     fig.tight_layout()
