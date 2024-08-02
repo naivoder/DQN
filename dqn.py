@@ -3,6 +3,7 @@ from torch.optim.lr_scheduler import LambdaLR
 import numpy as np
 from memory import ReplayBuffer
 
+
 def lr_lambda(epoch):
     if epoch < 20000:
         return 3e-4
@@ -58,7 +59,7 @@ class ActionValue(torch.nn.Module):
             if isinstance(m, torch.nn.Conv2d) or isinstance(m, torch.nn.Linear):
                 torch.nn.init.orthogonal_(m.weight)
                 if isinstance(m, torch.nn.Linear):
-                    m.weight.data.mul_(1/100)
+                    m.weight.data.mul_(1 / 100)
                 if m.bias is not None:
                     torch.nn.init.constant_(m.bias, 0)
 
@@ -135,7 +136,7 @@ class DQNAgent:
         self.q.optimizer.step()
 
         self.counter += 1
-        # self.decrement_epsilon()
+        self.decrement_epsilon()
 
     def decrement_epsilon(self):
         self.epsilon = max(self.eps_min, self.epsilon - self.eps_dec)

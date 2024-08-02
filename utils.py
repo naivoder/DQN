@@ -4,6 +4,16 @@ import imageio
 import cv2
 
 
+def collect_fixed_states(envs, steps=10):
+    states, _ = envs.reset()
+
+    for _ in range(steps):
+        actions = [envs.single_action_space.sample() for _ in range(envs.num_envs)]
+        states, _, _, _, _ = envs.step(actions)
+
+    return states
+
+
 def clip_reward(reward):
     if reward < -1:
         return -1

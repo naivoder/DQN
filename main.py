@@ -15,16 +15,6 @@ warnings.simplefilter("ignore")
 ALEInterface.setLoggerMode(LoggerMode.Error)
 
 
-def collect_fixed_states(envs, steps=10):
-    states, _ = envs.reset()
-
-    for _ in range(steps):
-        actions = [envs.single_action_space.sample() for _ in range(envs.num_envs)]
-        states, _, _, _, _ = envs.step(actions)
-
-    return torch.FloatTensor(states)
-
-
 def run_dqn(args):
 
     def make_env():
@@ -47,9 +37,9 @@ def run_dqn(args):
         args.env,
         envs.single_observation_space.shape,
         envs.single_action_space.n,
-        mem_size=100000,
-        batch_size=64,
-        eps_dec=1e-6,
+        mem_size=200000,
+        batch_size=32,
+        eps_dec=5e-7,
         replace_target_count=1000,
     )
 
@@ -85,8 +75,7 @@ def run_dqn(args):
                 score[j] = 0
 
             agent.learn()
-            agent.decrement_epsilon()
-            # agent.q.scheduler.step()
+
         states = next_states
 
         if len(history) > 0:
