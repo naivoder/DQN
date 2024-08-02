@@ -9,10 +9,20 @@ import pandas as pd
 from preprocess import AtariEnv
 from ale_py import ALEInterface, LoggerMode
 from config import environments
-import torch 
+import torch
 
 warnings.simplefilter("ignore")
 ALEInterface.setLoggerMode(LoggerMode.Error)
+
+
+def collect_fixed_states(envs, steps=10):
+    states, _ = envs.reset()
+
+    for _ in range(steps):
+        actions = [envs.single_action_space.sample() for _ in range(envs.num_envs)]
+        states, _, _, _, _ = envs.step(actions)
+
+    return torch.FloatTensor(states)
 
 
 def run_dqn(args):
@@ -52,6 +62,8 @@ def run_dqn(args):
     score = np.zeros(args.n_envs)
     history, metrics = [], []
 
+    fixed_states = torch.tensor(utils.collect_fixed_states(envs)).to(agent.q1.device)
+
     states, _ = envs.reset()
     for i in range(args.n_steps):
         actions = [agent.choose_action(state) for state in states]
@@ -84,29 +96,39 @@ def run_dqn(args):
             best_score = avg_score
             agent.save_checkpoint()
 
+        with torch.no_grad():
+            avg_q_value = (
+                torch.minimum(agent.q1(fixed_states), agent.q2(fixed_states))
+                .mean()
+                .cpu()
+                .numpy()
+            )
+
         metrics.append(
             {
                 "episode": i + 1,
                 "average_score": avg_score,
                 "best_score": best_score,
+                "average_q_value": avg_q_value,
             }
         )
 
         ep_str = f"[Epoch {i + 1:05}/{args.n_steps}]"
-        g_str = f"  Completed Games = {len(history)}"
-        avg_str = f"  Average Score = {avg_score:.2f}"
-        eps_str = f"  Epsilon = {agent.epsilon:.4f}"
-        print(ep_str + g_str + avg_str + eps_str, end="\r")
+        g_str = f"  Games = {len(history)}"
+        avg_str = f"  Avg.Score = {avg_score:.2f}"
+        q_str = f"  Avg.Q = {avg_q_value:.2e}"
+        eps_str = f"  Eps. = {agent.epsilon:.2f}"
+        print(ep_str + g_str + avg_str + q_str + eps_str, end="\r")
 
     torch.save(agent.q.state_dict(), f"weights/{save_prefix}_q_final.pt")
-    save_results(args.env, history, metrics, agent)
+    save_results(args.env, metrics, agent)
 
 
-def save_results(env_name, history, metrics, agent):
+def save_results(env_name, metrics, agent):
     save_prefix = env_name.split("/")[-1]
-    utils.plot_running_avg(history, save_prefix)
+    utils.plot_running_avg(save_prefix, metrics)
     df = pd.DataFrame(metrics)
-    df.to_csv(f"metrics/{save_prefix}_metrics.csv", index=False)
+    df.to_csv(f"csv/{save_prefix}_metrics.csv", index=False)
     save_best_version(env_name, agent)
 
 
