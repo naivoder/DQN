@@ -45,7 +45,7 @@ def run_dqn(args):
 
     if args.continue_training:
         if os.path.exists(f"weights/{save_prefix}_dqn.pt"):
-            agent.load_checkpoints()
+            agent.load_checkpoint()
 
     best_score = -np.inf
     avg_score = np.nan
@@ -171,7 +171,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--continue_training",
-        default=False,
+        default=True,
         type=bool,
         help="Continue training from saved weights.",
     )
