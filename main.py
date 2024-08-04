@@ -52,7 +52,7 @@ def run_dqn(args):
     score = np.zeros(args.n_envs)
     history, metrics = [], []
 
-    fixed_states = torch.tensor(utils.collect_fixed_states(envs)).to(agent.q1.device)
+    fixed_states = torch.tensor(utils.collect_fixed_states(envs)).to(agent.q.device)
 
     states, _ = envs.reset()
     for i in range(args.n_steps):
@@ -87,7 +87,7 @@ def run_dqn(args):
 
         with torch.no_grad():
             avg_q_value = (
-                torch.minimum(agent.q1(fixed_states), agent.q2(fixed_states))
+                torch.minimum(agent.q(fixed_states), agent.target_q(fixed_states))
                 .mean()
                 .cpu()
                 .numpy()
