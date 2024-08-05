@@ -115,9 +115,9 @@ def run_dqn(args):
 
 def save_results(env_name, metrics, agent):
     save_prefix = env_name.split("/")[-1]
-    utils.plot_metrics(save_prefix, metrics)
     df = pd.DataFrame(metrics)
     df.to_csv(f"csv/{save_prefix}_metrics.csv", index=False)
+    utils.plot_metrics(save_prefix, df)
     save_best_version(env_name, agent)
 
 
