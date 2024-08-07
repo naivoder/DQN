@@ -223,10 +223,10 @@ python main.py --env 'LunarLander-v2'
             <p><b>Enduro</b></p>
             <img src="environments/EnduroNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>DoubleDunk</b></p>
-            <img src="environments/DoubleDunkNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>-->
+        <td>
+            <p><b>FishingDerby</b></p>
+            <img src="environments/FishingDerbyNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
@@ -235,9 +235,9 @@ python main.py --env 'LunarLander-v2'
         <td>
             <img src="metrics/EnduroNoFrameskip-v4_running_avg.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/DoubleDunkNoFrameskip-v4_running_avg.png" width="250" height="250"/>
-        </td>-->
+        <td>
+            <img src="metrics/FishingDerbyNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
     </tr>
 </table> 
 

@@ -49,9 +49,9 @@ def save_animation(frames, filename):
 
 
 def plot_metrics(env, metrics):
-    episodes = metrics["episode"]
-    run_avg_scores = metrics["average_score"]
-    avg_q_values = metrics["average_q_value"]
+    episodes = np.array(metrics["episode"])
+    run_avg_scores = np.array(metrics["average_score"])
+    avg_q_values = np.array(metrics["average_q_value"])
 
     run_avg_qvals = np.zeros_like(avg_q_values)
     for i in range(len(avg_q_values)):
