@@ -22,7 +22,7 @@ environments = [
     # "DoubleDunkNoFrameskip-v4",
     # "ElevatorActionNoFrameskip-v4",
     # "EnduroNoFrameskip-v4",
-    "FishingDerbyNoFrameskip-v4",
+    # "FishingDerbyNoFrameskip-v4",
     "FreewayNoFrameskip-v4",
     "FrostbiteNoFrameskip-v4",
     "GopherNoFrameskip-v4",
