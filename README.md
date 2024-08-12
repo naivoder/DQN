@@ -304,10 +304,10 @@ python main.py --env 'LunarLander-v2'
             <p><b>JourneyEscape</b></p>
             <img src="environments/JourneyEscapeNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>IceHockey</b></p>
-            <img src="environments/IceHockeyNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>-->
+        <td>
+            <p><b>Kangaroo</b></p>
+            <img src="environments/KangarooNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
@@ -316,8 +316,35 @@ python main.py --env 'LunarLander-v2'
         <td>
             <img src="metrics/JourneyEscapeNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
+        <td>
+            <img src="metrics/KangarooNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+    </tr>
+</table> 
+<table>
+    <tr>
+        <td>
+            <p><b>Krull</b></p>
+            <img src="environments/KrullNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
         <!--<td>
-            <img src="metrics/IceHockeyNoFrameskip-v4_metrics.png" width="250" height="250"/>
+            <p><b>JourneyEscape</b></p>
+            <img src="environments/JourneyEscapeNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <td>
+            <p><b>Kangaroo</b></p>
+            <img src="environments/KangarooNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>-->
+    </tr>
+    <tr>
+        <td>
+            <img src="metrics/KrullNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <!--<td>
+            <img src="metrics/JourneyEscapeNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <td>
+            <img src="metrics/KangarooNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>-->
     </tr>
 </table> 
