@@ -327,25 +327,25 @@ python main.py --env 'LunarLander-v2'
             <p><b>Krull</b></p>
             <img src="environments/KrullNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>JourneyEscape</b></p>
-            <img src="environments/JourneyEscapeNoFrameskip-v4.gif" width="250" height="250"/>
+        <td>
+            <p><b>KungFuMaster</b></p>
+            <img src="environments/KungFuMasterNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
         <td>
-            <p><b>Kangaroo</b></p>
-            <img src="environments/KangarooNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>-->
+            <p><b>MontezumaRevenge</b></p>
+            <img src="environments/MontezumaRevengeNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
             <img src="metrics/KrullNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/JourneyEscapeNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        <td>
+            <img src="metrics/KungFuMasterNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
         <td>
-            <img src="metrics/KangarooNoFrameskip-v4_metrics.png" width="250" height="250"/>
-        </td>-->
+            <img src="metrics/MontezumaRevengeNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
     </tr>
 </table> 
 
