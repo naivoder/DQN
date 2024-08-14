@@ -348,6 +348,33 @@ python main.py --env 'LunarLander-v2'
         </td>
     </tr>
 </table> 
+<table>
+    <tr>
+        <td>
+            <p><b>MsPacman</b></p>
+            <img src="environments/MsPacmanNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <td>
+            <p><b>NameThisGame</b></p>
+            <img src="environments/NameThisGameNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <!--<td>
+            <p><b>MontezumaRevenge</b></p>
+            <img src="environments/MontezumaRevengeNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>-->
+    </tr>
+    <tr>
+        <td>
+            <img src="metrics/MsPacmanNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <td>
+            <img src="metrics/NameThisGameNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <!--<td>
+            <img src="metrics/MontezumaRevengeNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>-->
+    </tr>
+</table> 
 
 ---
 
