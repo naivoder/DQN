@@ -358,10 +358,10 @@ python main.py --env 'LunarLander-v2'
             <p><b>NameThisGame</b></p>
             <img src="environments/NameThisGameNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>MontezumaRevenge</b></p>
-            <img src="environments/MontezumaRevengeNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>-->
+        <td>
+            <p><b>Phoenix</b></p>
+            <img src="environments/PhoenixNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
@@ -370,8 +370,35 @@ python main.py --env 'LunarLander-v2'
         <td>
             <img src="metrics/NameThisGameNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
+        <td>
+            <img src="metrics/PhoenixNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+    </tr>
+</table> 
+<table>
+    <tr>
+        <td>
+            <p><b>Pitfall</b></p>
+            <img src="environments/PitfallNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
         <!--<td>
-            <img src="metrics/MontezumaRevengeNoFrameskip-v4_metrics.png" width="250" height="250"/>
+            <p><b>NameThisGame</b></p>
+            <img src="environments/NameThisGameNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <td>
+            <p><b>Phoenix</b></p>
+            <img src="environments/PhoenixNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>-->
+    </tr>
+    <tr>
+        <td>
+            <img src="metrics/PitfallNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <!--<td>
+            <img src="metrics/NameThisGameNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <td>
+            <img src="metrics/PhoenixNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>-->
     </tr>
 </table> 
