@@ -381,25 +381,25 @@ python main.py --env 'LunarLander-v2'
             <p><b>Pitfall</b></p>
             <img src="environments/PitfallNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>NameThisGame</b></p>
-            <img src="environments/NameThisGameNoFrameskip-v4.gif" width="250" height="250"/>
+        <td>
+            <p><b>Pong</b></p>
+            <img src="environments/PongNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
         <td>
-            <p><b>Phoenix</b></p>
-            <img src="environments/PhoenixNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>-->
+            <p><b>Pooyan</b></p>
+            <img src="environments/PooyanNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
             <img src="metrics/PitfallNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/NameThisGameNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        <td>
+            <img src="metrics/PongNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
         <td>
-            <img src="metrics/PhoenixNoFrameskip-v4_metrics.png" width="250" height="250"/>
-        </td>-->
+            <img src="metrics/PooyanNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
     </tr>
 </table> 
 

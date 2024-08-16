@@ -5,12 +5,11 @@ from argparse import ArgumentParser
 from utils import save_animation
 
 def generate_animation(env_name):
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     env = AtariEnv(
             env_name,
             shape=(84, 84),
             repeat=4,
-            clip_rewards=True,
+            clip_rewards=False,
             no_ops=0,
             fire_first=False,
         ).make()
@@ -22,14 +21,15 @@ def generate_animation(env_name):
         batch_size=64,
         eps_dec=1e-5,
         replace_target_count=1000,)
+    agent.epsilon = 0.1
     
-    # agent.load_checkpoint()
-    agent.q.load_state_dict(torch.load(f"weights/{env_name}_q_final.pt"))
+    agent.load_checkpoint()
+    # agent.q.load_state_dict(torch.load(f"weights/{env_name}_q_final.pt"))
     
     best_total_reward = float("-inf")
     best_frames = None
 
-    for _ in range(10):
+    for _ in range(100):
         frames = []
         total_reward = 0
 
