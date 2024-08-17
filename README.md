@@ -408,11 +408,11 @@ python main.py --env 'LunarLander-v2'
             <p><b>PrivateEye</b></p>
             <img src="environments/PrivateEyeNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>Pong</b></p>
-            <img src="environments/PongNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>
         <td>
+            <p><b>Qbert</b></p>
+            <img src="environments/QbertNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <!--<td>
             <p><b>Pooyan</b></p>
             <img src="environments/PooyanNoFrameskip-v4.gif" width="250" height="250"/>
         </td>-->
@@ -421,10 +421,10 @@ python main.py --env 'LunarLander-v2'
         <td>
             <img src="metrics/PrivateEyeNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/PongNoFrameskip-v4_metrics.png" width="250" height="250"/>
-        </td>
         <td>
+            <img src="metrics/QbertNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <!--<td>
             <img src="metrics/PooyanNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>-->
     </tr>
