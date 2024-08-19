@@ -45,7 +45,7 @@ environments = [
     # "QbertNoFrameskip-v4",
     # "RiverraidNoFrameskip-v4",
     # "RoadRunnerNoFrameskip-v4",
-    "RobotankNoFrameskip-v4",
+    # "RobotankNoFrameskip-v4",
     "SeaquestNoFrameskip-v4",
     "SkiingNoFrameskip-v4",
     "SolarisNoFrameskip-v4",
