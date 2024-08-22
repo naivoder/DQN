@@ -462,11 +462,11 @@ python main.py --env 'MsPacmanNoFrameskip-v4'
             <p><b>Skiing</b></p>
             <img src="environments/SkiingNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>Robotank</b></p>
-            <img src="environments/RobotankNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>
         <td>
+            <p><b>Solaris</b></p>
+            <img src="environments/SolarisNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <!--<td>
             <p><b>Seaquest</b></p>
             <img src="environments/SeaquestNoFrameskip-v4.gif" width="250" height="250"/>
         </td>-->
@@ -475,10 +475,10 @@ python main.py --env 'MsPacmanNoFrameskip-v4'
         <td>
             <img src="metrics/SkiingNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/RobotankNoFrameskip-v4_metrics.png" width="250" height="250"/>
-        </td>
         <td>
+            <img src="metrics/SolarisNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <!--<td>
             <img src="metrics/SeaquestNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>-->
     </tr>
