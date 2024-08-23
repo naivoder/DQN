@@ -466,10 +466,10 @@ python main.py --env 'MsPacmanNoFrameskip-v4'
             <p><b>Solaris</b></p>
             <img src="environments/SolarisNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>Seaquest</b></p>
-            <img src="environments/SeaquestNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>-->
+        <td>
+            <p><b>SpaceInvaders</b></p>
+            <img src="environments/SpaceInvadersNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
@@ -478,9 +478,9 @@ python main.py --env 'MsPacmanNoFrameskip-v4'
         <td>
             <img src="metrics/SolarisNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/SeaquestNoFrameskip-v4_metrics.png" width="250" height="250"/>
-        </td>-->
+        <td>
+            <img src="metrics/SpaceInvadersNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
     </tr>
 </table>
 
