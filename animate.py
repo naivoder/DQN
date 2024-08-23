@@ -1,5 +1,4 @@
 from preprocess import AtariEnv
-import torch
 from dqn import DQNAgent
 from argparse import ArgumentParser
 from utils import save_animation
