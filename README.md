@@ -483,6 +483,33 @@ python main.py --env 'MsPacmanNoFrameskip-v4'
         </td>
     </tr>
 </table>
+<table>
+    <tr>
+        <td>
+            <p><b>StarGunner</b></p>
+            <img src="environments/StarGunnerNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <!--<td>
+            <p><b>Solaris</b></p>
+            <img src="environments/SolarisNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <td>
+            <p><b>SpaceInvaders</b></p>
+            <img src="environments/SpaceInvadersNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>-->
+    </tr>
+    <tr>
+        <td>
+            <img src="metrics/StarGunnerNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <!--<td>
+            <img src="metrics/SolarisNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <td>
+            <img src="metrics/SpaceInvadersNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>-->
+    </tr>
+</table>
 
 ---
 

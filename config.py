@@ -49,7 +49,7 @@ environments = [
     # "SeaquestNoFrameskip-v4",
     # "SkiingNoFrameskip-v4",
     # "SolarisNoFrameskip-v4",
-    "SpaceInvadersNoFrameskip-v4",
+    # "SpaceInvadersNoFrameskip-v4",
     "StarGunnerNoFrameskip-v4",
     "TennisNoFrameskip-v4",
     "TimePilotNoFrameskip-v4",
