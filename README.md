@@ -489,25 +489,25 @@ python main.py --env 'MsPacmanNoFrameskip-v4'
             <p><b>StarGunner</b></p>
             <img src="environments/StarGunnerNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>Solaris</b></p>
-            <img src="environments/SolarisNoFrameskip-v4.gif" width="250" height="250"/>
+        <td>
+            <p><b>Tennis</b></p>
+            <img src="environments/TennisNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
         <td>
-            <p><b>SpaceInvaders</b></p>
-            <img src="environments/SpaceInvadersNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>-->
+            <p><b>TimePilot</b></p>
+            <img src="environments/TimePilotNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
             <img src="metrics/StarGunnerNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/SolarisNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        <td>
+            <img src="metrics/TennisNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
         <td>
-            <img src="metrics/SpaceInvadersNoFrameskip-v4_metrics.png" width="250" height="250"/>
-        </td>-->
+            <img src="metrics/TimePilotNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
     </tr>
 </table>
 
