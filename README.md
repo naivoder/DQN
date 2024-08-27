@@ -510,6 +510,33 @@ python main.py --env 'MsPacmanNoFrameskip-v4'
         </td>
     </tr>
 </table>
+<table>
+    <tr>
+        <td>
+            <p><b>Tutankham</b></p>
+            <img src="environments/TutankhamNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <td>
+            <p><b>UpNDown</b></p>
+            <img src="environments/UpNDownNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <!--<td>
+            <p><b>TimePilot</b></p>
+            <img src="environments/TimePilotNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>-->
+    </tr>
+    <tr>
+        <td>
+            <img src="metrics/TutankhamNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <td>
+            <img src="metrics/UpNDownNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <!-- <td>
+            <img src="metrics/TimePilotNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td> -->
+    </tr>
+</table>
 
 ---
 
