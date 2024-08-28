@@ -520,10 +520,10 @@ python main.py --env 'MsPacmanNoFrameskip-v4'
             <p><b>UpNDown</b></p>
             <img src="environments/UpNDownNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>TimePilot</b></p>
-            <img src="environments/TimePilotNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>-->
+        <td>
+            <p><b>Venture</b></p>
+            <img src="environments/VentureNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
@@ -532,9 +532,36 @@ python main.py --env 'MsPacmanNoFrameskip-v4'
         <td>
             <img src="metrics/UpNDownNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
-        <!-- <td>
-            <img src="metrics/TimePilotNoFrameskip-v4_metrics.png" width="250" height="250"/>
-        </td> -->
+        <td>
+            <img src="metrics/VentureNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>
+            <p><b>VideoPinball</b></p>
+            <img src="environments/VideoPinballNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <!--<td>
+            <p><b>UpNDown</b></p>
+            <img src="environments/UpNDownNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
+        <td>
+            <p><b>Venture</b></p>
+            <img src="environments/VentureNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>-->
+    </tr>
+    <tr>
+        <td>
+            <img src="metrics/VideoPinballNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <!--<td>
+            <img src="metrics/UpNDownNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
+        <td>
+            <img src="metrics/VentureNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>-->
     </tr>
 </table>
 

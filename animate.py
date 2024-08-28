@@ -2,6 +2,7 @@ from preprocess import AtariEnv
 from dqn import DQNAgent
 from argparse import ArgumentParser
 from utils import save_animation
+import torch 
 
 def generate_animation(env_name):
     env = AtariEnv(
@@ -10,7 +11,7 @@ def generate_animation(env_name):
             repeat=4,
             clip_rewards=False,
             no_ops=0,
-            fire_first=False,
+            fire_first=True,
         ).make()
     agent = DQNAgent(
         env_name,
@@ -22,8 +23,8 @@ def generate_animation(env_name):
         replace_target_count=1000,)
     agent.epsilon = 0.1
     
-    agent.load_checkpoint()
-    # agent.q.load_state_dict(torch.load(f"weights/{env_name}_q_final.pt"))
+    # agent.load_checkpoint()
+    agent.q.load_state_dict(torch.load(f"weights/{env_name}_q_final.pt"))
     
     best_total_reward = float("-inf")
     best_frames = None
