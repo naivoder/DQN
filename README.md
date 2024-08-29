@@ -547,10 +547,10 @@ python main.py --env 'MsPacmanNoFrameskip-v4'
             <p><b>WizardOfWor</b></p>
             <img src="environments/WizardOfWorNoFrameskip-v4.gif" width="250" height="250"/>
         </td>
-        <!--<td>
-            <p><b>WizardOfWor</b></p>
-            <img src="environments/WizardOfWorNoFrameskip-v4.gif" width="250" height="250"/>
-        </td>-->
+        <td>
+            <p><b>YarsRevenge</b></p>
+            <img src="environments/YarsRevengeNoFrameskip-v4.gif" width="250" height="250"/>
+        </td>
     </tr>
     <tr>
         <td>
@@ -559,9 +559,9 @@ python main.py --env 'MsPacmanNoFrameskip-v4'
         <td>
             <img src="metrics/WizardOfWorNoFrameskip-v4_metrics.png" width="250" height="250"/>
         </td>
-        <!--<td>
-            <img src="metrics/VentureNoFrameskip-v4_metrics.png" width="250" height="250"/>
-        </td>-->
+        <td>
+            <img src="metrics/YarsRevengeNoFrameskip-v4_metrics.png" width="250" height="250"/>
+        </td>
     </tr>
 </table>
 
