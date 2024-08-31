@@ -9,7 +9,7 @@
 
 ## Overview
 
-This repository contains an implementation of the original Deep Q-Network (DQN) learning algorithm using PyTorch. DQN introduced a significant advancement in reinforcement learning by combining Q-learning with deep neural networks to handle high-dimensional state spaces, such as those encountered in video games.
+This repository contains an implementation of the original [Deep Q-Network (DQN)](https://arxiv.org/pdf/1312.5602) learning algorithm using PyTorch. DQN introduced a significant advancement in reinforcement learning by combining Q-learning with deep neural networks to handle high-dimensional state spaces, such as those encountered in video games.
 
 The core idea of DQN is to approximate the Q-value function, which estimates the expected future rewards for taking a certain action in a given state. To achieve this, DQN employs a neural network to predict Q-values and uses experience replay to break the correlation between consecutive experiences, improving training stability. Additionally, it uses a separate target network to compute the target Q-values, which are periodically updated to stabilize training by providing a more consistent target.
 
@@ -679,7 +679,7 @@ The performance issues observed in these environments can be attributed to sever
 
 - **Navigation and Spatial Awareness**: Complex navigation tasks (e.g., Kangaroo and Zaxxon) highlight difficulties with obstacle avoidance and spatial understanding, which can be challenging for DQN’s neural network architecture and experience replay mechanism.
 
-Overall, while DQN represents a significant advancement in reinforcement learning, its performance can be limited by its inherent algorithmic choices and the specific demands of different environments. Addressing these challenges may require more sophisticated approaches, such as those introduced in subsequent algorithms like Double DQN or other variants that improve on DQN’s limitations like the introduction of Recurrent Neural Networks for learning temporal relationships between states.
+Overall, while DQN represents a significant advancement in reinforcement learning, its performance can be limited by its inherent algorithmic choices and the specific demands of different environments. Addressing these challenges may require more sophisticated approaches, such as those introduced in subsequent algorithms like [Double DQN](https://github.com/naivoder/DDQN) or other variants that improve on DQN’s limitations like the introduction of [Recurrent Neural Networks](https://cs229.stanford.edu/proj2016/report/ChenYingLaird-DeepQLearningWithRecurrentNeuralNetwords-report.pdf) for learning temporal relationships between states.
 
 ## Acknowledgements
 
